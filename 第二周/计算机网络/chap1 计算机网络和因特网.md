@@ -208,7 +208,63 @@ back up plan ，多个源头，一个坏了还能得到数据
 
 ![image-20230915170452204](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230915170452204.png)
 
-
-
 传文件的时间，受到文件大小的影响。
+
+![image-20230917090918472](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917090918472.png)
+
+相当于“火车有多长”和“铁轨有多长”的问题
+
+![image-20230917091654741](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917091654741.png)
+
+所有人都通过收费站之前，只允许在收费站等着
+
+![image-20230917092011166](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917092011166.png)
+
+![image-20230917100631448](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917100631448.png)
+
+我们考虑最后一辆车
+
+![image-20230917101440199](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917101440199.png)
+
+![image-20230917115754634](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917115754634.png)
+
+a:**平均**每秒来几个包
+
+L:一个包几个bit
+
+aL:每秒来几个比特
+
+R:每秒走几个比特
+
+![image-20230917120545183](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917120545183.png)
+
+注意LA/R是平均情况。相当于正态分布的对称轴，一旦出现对称轴右边的情况，就会排队
+
+![image-20230917121050205](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917121050205.png)
+
+丢包是要补上去的！！！
+
+### 1.4.3 端到端时延
+
+![image-20230917123514520](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917123514520.png)
+
+中间N-1台，首尾各自算上半台，一共是N台
+
+### 1.4.4 吞吐量
+
+![image-20230917123931676](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917123931676.png)
+
+吞吐量就是接收速度，平均吞吐量就是平均接受速度。
+
+![image-20230917124318285](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917124318285.png)
+
+![image-20230917124513194](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917124513194.png)
+
+![image-20230917124552792](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917124552792.png)
+
+考虑最慢的哪一个
+
+![image-20230917124730752](C:\Users\15574\AppData\Roaming\Typora\typora-user-images\image-20230917124730752.png)
+
+大家公用（平分）中间的大管子，如果中间的大管子不够粗的话，平分之后可能比接入网络还要细，成为整个系统的制约因素。
 
